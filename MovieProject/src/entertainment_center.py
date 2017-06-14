@@ -1,7 +1,10 @@
 from media import Movie
 from fresh_tomatos import open_movies_page
 
+# array list to hold movie objects
 list_of_movies = []
+
+# movie objects
 eternal_sunshine = Movie("Eternal Sunshine", "1h 48m",
                          "https://upload.wikimedia.org/wikipedia/en/6/62/Eternal_sunshine_of_the_spotless_mind_ver3.j" +
                          "pg",
@@ -44,4 +47,5 @@ lord_of_the_rings = Movie("Fellowship Of The Ring", "2h 58m",
                           "https://www.youtube.com/watch?v=V75dMMIW2B4")
 list_of_movies.append(lord_of_the_rings)
 
+# send movies to the page
 open_movies_page(list_of_movies)
